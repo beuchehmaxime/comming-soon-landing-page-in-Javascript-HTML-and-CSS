@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comming Soon</title>
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    
+    <!--Header file-->
+
+    <section class="header">
+        <nav class="nav">
+            <div class="nav-brand">
+                <a href="#">CHARNA <span>INC</span></a>
+            </div>
+            <ul class="nav-list">
+                <li class="nav-item">
+                    <a href="#">HOME</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#">ABOUT</a>
+                </li>                
+                <li class="nav-item">
+                    <a href="#">CONTACT</a>
+                </li>
+            </ul>
+            <div class="icons">
+                <span>
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-google-plus"></i></a>
+                </span>
+            </div>
+        </nav>
+    </section>
+
+    <section class="comming-soon">
+        <div class="commingsoon-left">
+            <h1>
+                We are comming soon
+            </h1>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Tempore doloribus delectus mollitia cumque a cupiditate 
+                molestias, necessitatibus est magnam corporis sunt magni
+                iusto velit aperiam unde quibusdam assumenda. Quidem, libero?
+                inventore esse dolore saepe sint nesciunt veritatis aspernatur
+                sit nihil sequi nobis dolores doloremque amet totam molestiae quo,
+                aliquam pariatur.
+            </p>
+            <div class="count-down">
+                <div class="box">
+                    <h3 id="day">00</h3>
+                    <span>days</span>
+                </div>
+                <div class="box">
+                    <h3 id="hour">00</h3>
+                    <span>hours</span>
+                </div>
+                <div class="box">
+                    <h3 id="minute">00</h3>
+                    <span>minutes</span>
+                </div>
+                <div class="box">
+                    <h3 id="second">00</h3>
+                    <span>seconds</span>
+                </div>
+            </div>
+            <a href="#" class="btn-secondary">Notify Me</a>
+        </div>
+        <div class="commingsoon-right">
+            <div class="image">
+                <img src="./images/4.png" alt="">
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <footer class="footer">
+        <div class="foot">
+            <p> All Right Reserved
+                <a href="#">Charna Inc</a>
+            </p>
+            <p>
+                Made with ❤❤ By Maxime
+            </p>
+        </div>
+        
+    </footer>
+
+    <!--Scripts for javascript-->
+
+    <script src="./js/jquery-3.5.1.min.js"></script>
+    <script src="./js/owl.carousel.min.js"></script>
+    <script src="./js/main.js"></script>
+
+    <script>
+        let countdate = new Date('dec 18, 2021 00:00:00').getTime();
+
+function countDown(){
+    let now = new Date().getTime();
+    gap = countdate - now;
+
+    let second = 1000;
+    let minute = second * 60;
+    let hour = minute * 60;
+    let day = hour * 24;
+
+
+    let d = Math.floor(gap / (day));
+    let h = Math.floor((gap % (day)) / (hour));
+    let m = Math.floor((gap % (hour)) / (minute));
+    let s = Math.floor((gap % (minute)) / (second));
+
+    document.getElementById('day').innerText = d;
+    document.getElementById('hour').innerText = h;
+    document.getElementById('minute').innerText = m;
+    document.getElementById('second').innerText = s;
+
+
+}
+
+setInterval(function(){
+    countDown();
+},1000);
+    </script>
+</body>
+</html>

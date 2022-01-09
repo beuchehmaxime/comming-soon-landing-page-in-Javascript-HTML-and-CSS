@@ -1,0 +1,197 @@
+@import url('../css/fonts.css');
+
+
+
+html, body{
+    margin: 0%;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+
+/*   Styling for global classes  */
+
+:root{
+    --white: #fff;
+    --primarycolor: linear-gradient(90deg, rgba(190,89,11,0.958420868347339) 0%, rgba(255,156,99,1) 39%, rgba(247,200,172,1) 100%);
+}
+
+a{
+    text-decoration: none;
+    color: rgb(70, 70, 70);
+}
+
+li{
+    list-style: none;
+}
+
+/* End styling for globals */
+.header{
+    background-color: rgba(224, 224, 224, 0.144);
+    
+}
+
+.header .nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: .2rem 1.5rem;
+}
+
+.header .nav .nav-brand a{
+    color: #FF9C63;
+    font-family: 'Nunito',sans-serif;
+    font-size: 1.6rem;
+}
+
+.header .nav .nav-brand a span{
+    color: rgba(43, 43, 43, 0.685);
+}
+
+
+.header .nav .nav-list{
+    display: flex;
+}
+
+.header .nav .nav-list .nav-item{
+    font-size: 1.2rem;
+    font-family: 'Nunito', sans-serif;
+    padding: 0 1rem;
+}
+.header .nav .nav-list .nav-item:hover a{
+    transition: all .6s ease-in-out;
+    color: #FF9C63;
+}
+
+.header .nav .icons span a{
+    color: #ec8f59;
+    font-size: 1.3rem;
+    padding: .4rem;
+}
+
+
+.comming-soon{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 5rem 7%;    
+    
+    background: rgba(255, 255, 255, 0.685);
+    padding-bottom: 80px;    
+}
+
+.comming-soon .commingsoon-left{
+    min-height: 60vh;
+    gap: 15px;
+    padding: 1rem 2rem;
+    flex: 1 1 400px;
+    background: rgba(250, 248, 248, 0.274);
+}
+
+.comming-soon .commingsoon-left h1{
+    font-size: 2.3rem;
+    text-transform: uppercase;
+    color: #FF9C63;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+.comming-soon .commingsoon-left p{
+    text-indent: 3rem;
+    color: #422716be;
+    margin-top: -1.4rem;
+    line-height: 1.3rem;
+    word-spacing: .2rem;
+    font-size: 1.1rem;
+    font-family: 'Montserrat',sans-serif;
+}
+
+.comming-soon .commingsoon-left .count-down{
+    display: flex;
+    gap: 15px;
+    padding: 10px 0;
+}
+
+
+
+.comming-soon .commingsoon-left .count-down .box{
+    padding: .6rem 1.6rem;
+    background: rgb(255, 255, 255);
+    border: 1px solid rgb(236, 236, 236);
+    margin: 0 .8rem;
+    text-align: center;
+    box-shadow: 1px 3px 19px #b8a0921e,
+                -1px 3px 19px #ff9c638a;
+}
+
+
+.comming-soon .commingsoon-left .count-down .box h3{
+    font-size: 3.5rem;
+    margin: .4rem 0;
+    color: #f89d68;
+    font-weight: 700;
+    font-family: 'Nunito', sans-serif;
+}
+
+
+.comming-soon .commingsoon-left .count-down .box span{
+    font-size: 1.1rem;
+    text-transform: capitalize;
+    color: rgba(94, 94, 94, 0.774);
+}
+
+
+
+.comming-soon .commingsoon-left .btn-secondary{
+    display: inline-block;
+    padding:8px 20px;
+    margin: 10px 2rem;
+    background: transparent;
+    outline: none;
+    border: 2px solid #1f0d03;
+    text-transform: uppercase;
+    color: rgba(17, 17, 17, 0.884);
+}
+
+.comming-soon .commingsoon-left .btn-secondary:hover{
+    border: 2px solid #1f0d03;
+    text-transform: uppercase;
+    color: white;
+    background: #1f0d03;
+    transition: all .5s ease-in-out;
+}
+
+
+
+
+
+.comming-soon .commingsoon-right{
+    flex: 1 1 400px;
+}
+
+.comming-soon .commingsoon-right .image img{
+    width: 100%;
+}
+
+
+
+
+
+
+.footer{
+    padding: .1rem 3rem;
+    background: rgba(233, 233, 233, 0.301);
+}
+
+.footer .foot{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.footer .foot p{
+    font-size: 1.1rem;
+    font-family: 'Montserrat', sans-serif;
+    color: #f89d68;
+}
